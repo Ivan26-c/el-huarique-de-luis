@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>El Huarique de Luis | Cevichería & Parrillas en Piura</title>
+  <meta name="description"
+    content="Cevichería y Parrillas El Huarique de Luis en Piura. Disfruta de la mejor comida marina fresca y exquisitas parrillas en nuestras dos sedes en Piura y Castilla.">
+  <meta name="keywords"
+    content="cevicheria piura, parrillas piura, el huarique de luis, ceviche castilla, comida marina, reservas restaurante">
+  <meta name="author" content="El Huarique de Luis">
+
+  <link rel="icon" type="image/png" href="img/logo-elhuariquedeluis.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 1. TOP BAR INFORMATIVA-->
+  <div class="top-bar d-none d-md-block">
+    <div class="container">
+      <div class="d-flex justify-content-end align-items-center gap-3">
+        <span class="top-bar-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span>975 519 075</span>
+        </span>
+        <span class="text-white-50">|</span>
+        <a href="https://www.facebook.com/CevichesYChicharronesLuchos" target="_blank" rel="noopener noreferrer"
+          class="top-bar-social facebook" title="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/51975519075" target="_blank" rel="noopener noreferrer" class="top-bar-social whatsapp"
+          title="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. HEADER Y BARRA DE NAVEGACIÓN PRINCIPAL -->
+  <header class="site-header">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand" href="#inicio">
+          <img src="img/logo-elhuariquedeluis.png" alt="Logo El Huarique de Luis" class="brand-logo-img me-1">
+          <div class="brand-title">
+            <span class="main-title">EL HUARIQUE DE LUIS</span>
+            <span class="sub-title">Cevichería & Parrillas</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Alternar navegación">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">
+                <i class="bi bi-house-door me-1 d-lg-none"></i>Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">
+                <i class="bi bi-journal-text me-1 d-lg-none"></i>Menú
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sedes">
+                <i class="bi bi-geo-alt me-1 d-lg-none"></i>Sedes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservas">
+                <i class="bi bi-calendar2-check me-1 d-lg-none"></i>Reservas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">
+                <i class="bi bi-envelope me-1 d-lg-none"></i>Contacto
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex">
+            <a href="#reservas" class="btn btn-reserva-nav">
+              <i class="bi bi-calendar-event-fill"></i>
+              <span>Reservar Mesa</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- 3. CONTENIDO PRINCIPAL: ESTRUCTURA BASE Y SECCIONES DEL PROYECTO -->
+  <main>
+
+    <!-- SECCIÓN 1: INICIO / HERO -->
+    <section id="inicio" class="section-placeholder py-5 bg-light">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
+              <span class="section-tag mb-3">Sección 1</span>
+              <div class="mb-3">
+                <i class="bi bi-house-heart text-primary fs-1"></i>
+              </div>
+              <h2 class="display-6 fw-bold text-primary mb-3">Sección Inicio / Hero Banner</h2>
+              <p class="text-muted lead mx-auto" style="max-width: 700px;">
+                Aquí se integrará el banner principal, eslogan del restaurante, carrusel de platos estrella y botones
+                directos hacia el Menú y las Reservas.
+              </p>
+              <div class="mt-4 d-flex justify-content-center gap-3">
+                <a href="#menu" class="btn btn-primary px-4 py-2 rounded-pill">Ver Menú</a>
+                <a href="#reservas" class="btn btn-outline-dark px-4 py-2 rounded-pill">Hacer Reserva</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: MENÚ (Ceviches, Mariscos, Parrillas, Bebidas) -->
+    <section id="menu" class="section-placeholder py-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
+              <span class="section-tag mb-3">Sección 2</span>
+              <div class="mb-3">
+                <i class="bi bi-egg-fried text-warning fs-1"></i>
+              </div>
+              <h2 class="display-6 fw-bold text-primary mb-3">Sección Menú y Carta Digital</h2>
+              <p class="text-muted lead mx-auto" style="max-width: 700px;">
+                Aquí se integrarán las categorías de platos (Ceviches, Chicharrones, Dúos/Tríos Marinos, Parrillas
+                Criollas y Bebidas), con sus precios actualizados, fotos e ingredientes.
+              </p>
+              <div class="badge bg-primary-subtle text-primary border px-3 py-2 rounded-pill mt-2">
+                Estructura lista para Cards de Bootstrap y filtros por categoría
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: SEDES (Ubicación, Horarios, Mapas de las 2 sedes) -->
+    <section id="sedes" class="section-placeholder py-5 bg-light">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
+              <span class="section-tag mb-3">Sección 3</span>
+              <div class="mb-3">
+                <i class="bi bi-geo-alt-fill text-danger fs-1"></i>
+              </div>
+              <h2 class="display-6 fw-bold text-primary mb-3">Sección Sedes (Piura y Castilla)</h2>
+              <p class="text-muted lead mx-auto" style="max-width: 700px;">
+                Aquí se presentarán las dos sedes con su dirección exacta (Sede Castilla: Av. Progreso 1213 y Sede 2 en
+                Piura), horarios de atención, teléfonos de contacto e incrustación de Google Maps.
+              </p>
+              <div class="badge bg-success-subtle text-success border px-3 py-2 rounded-pill mt-2">
+                Estructura lista para 2 columnas con mapa interactivo y fotos de locales
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: RESERVAS -->
+    <section id="reservas" class="section-placeholder py-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
+              <span class="section-tag mb-3">Sección 4</span>
+              <div class="mb-3">
+                <i class="bi bi-calendar2-check-fill text-primary fs-1"></i>
+              </div>
+              <h2 class="display-6 fw-bold text-primary mb-3">Sección Formulario de Reservas</h2>
+              <p class="text-muted lead mx-auto" style="max-width: 700px;">
+                Aquí se colocará el formulario con validación HTML5/Bootstrap (Nombre, Teléfono, Sede, Fecha, Hora, N°
+                Personas) que activará la ventana modal de confirmación.
+              </p>
+              <div class="badge bg-warning-subtle text-dark border px-3 py-2 rounded-pill mt-2">
+                Estructura lista para Form Controls y Modal de Bootstrap
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CONTACTO (Canales directos, WhatsApp, Consultas) -->
+    <section id="contacto" class="section-placeholder py-5 bg-light">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
+              <span class="section-tag mb-3">Sección 5</span>
+              <div class="mb-3">
+                <i class="bi bi-chat-dots-fill text-info fs-1"></i>
+              </div>
+              <h2 class="display-6 fw-bold text-primary mb-3">Sección de Contacto</h2>
+              <p class="text-muted lead mx-auto" style="max-width: 700px;">
+                Aquí se ubicarán los canales de atención al cliente, botón directo a WhatsApp y formulario rápido para
+                consultas o sugerencias.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand d-inline-flex align-items-center gap-2" href="#inicio">
+            <img src="img/logo-elhuariquedeluis.png" alt="Logo El Huarique de Luis" class="footer-logo-img">
+            <span>EL HUARIQUE DE LUIS</span>
+          </a>
+          <p class="text-light text-opacity-75 small mb-3">
+            Tradición, sazón marina y el mejor sabor de las brasas piuranas. Ofrecemos una experiencia culinaria
+            inolvidable con la frescura y calidez norteña.
+          </p>
+          <div class="small text-light text-opacity-50">
+            <strong>RUC:</strong> 10471599897<br>
+            <strong>Razón Social:</strong> Cevicheria y parrillas EL HUARIQUE DE LUIS
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Navegación</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio"><i class="bi bi-chevron-right small"></i> Inicio</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right small"></i> Menú</a></li>
+            <li><a href="#sedes"><i class="bi bi-chevron-right small"></i> Nuestras Sedes</a></li>
+            <li><a href="#reservas"><i class="bi bi-chevron-right small"></i> Reservar Mesa</a></li>
+            <li><a href="#contacto"><i class="bi bi-chevron-right small"></i> Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">Nuestras Sedes</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong class="text-white">Sede Castilla:</strong><br>
+              <span>Av. Progreso 1213, Castilla - Piura</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong class="text-white">Sede Piura:</strong><br>
+              <span>Piura Centro, Piura</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              <span>Atención: Lun a Dom</span><br>
+              <span>10:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Síguenos & Contáctanos</h5>
+          <p class="small text-light text-opacity-75 mb-2">
+            Conéctate con nosotros en nuestras redes oficiales y entérate de nuestras promociones diarias.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/CevichesYChicharronesLuchos" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/51975519075" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">
+          &copy; <span id="currentYear"></span> <strong>Cevicheria y parrillas EL HUARIQUE DE LUIS</strong>. Todos los
+          derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="btnBackToTop" class="back-to-top" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="main.js" type="text/JavaScript"></script>
+
+</body>
+
+</html>
