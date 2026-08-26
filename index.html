@@ -108,30 +108,367 @@
   <!-- 3. CONTENIDO PRINCIPAL: ESTRUCTURA BASE Y SECCIONES DEL PROYECTO -->
   <main>
 
-    <!-- SECCIÓN 1: INICIO / HERO -->
-    <section id="inicio" class="section-placeholder py-5 bg-light">
-      <div class="container py-4">
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <div class="placeholder-card shadow-sm border-0 bg-white p-5 rounded-4 text-center">
-              <span class="section-tag mb-3">Sección 1</span>
-              <div class="mb-3">
-                <i class="bi bi-house-heart text-primary fs-1"></i>
+    <!-- SECCIÓN 1: INICIO / HERO BANNER PERCY PEÑA -->
+    <!-- ========================================== -->
+
+<section id="inicio" class="hero-section">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-7 text-white">
+
+                <!-- Título principal -->
+                <h1 class="display-1 fw-bold mb-2">
+                    <span class="text-turquoise">El Huarique</span><br>
+                    <span class="text-accent">de Luis</span>
+                </h1>
+
+                <!-- Eslogan -->
+                <p class="lead fs-3 mb-3">
+                    <i class="bi bi-star-fill text-accent me-2"></i>
+                    Cevichería · Parrillas · Bar
+                </p>
+
+                <!-- Descripción -->
+                <p class="fs-5 text-white-75 mb-4" style="max-width: 550px;">
+                    El mejor sabor del norte en dos sedes en Castilla - Piura. 
+                    Disfruta de nuestros ceviches, chicharrones y parrillas con la mejor sazón.
+                </p>
+
+               <!-- Botones de acción -->
+              <div class="d-flex flex-wrap gap-3 mb-5">
+                  <a href="#menu" class="btn btn-accent px-5 py-3">
+                      Ver Menú
+                  </a>
+                  <a href="#reservas" class="btn btn-outline-accent px-5 py-3">
+                      <i class="bi bi-calendar-check me-2"></i>Reservar
+                  </a>
+                  <a href="https://wa.me/51975519075" target="_blank" class="btn btn-whatsapp px-4 py-3">
+                      <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                  </a>
               </div>
-              <h2 class="display-6 fw-bold text-primary mb-3">Sección Inicio / Hero Banner</h2>
-              <p class="text-muted lead mx-auto" style="max-width: 700px;">
-                Aquí se integrará el banner principal, eslogan del restaurante, carrusel de platos estrella y botones
-                directos hacia el Menú y las Reservas.
-              </p>
-              <div class="mt-4 d-flex justify-content-center gap-3">
-                <a href="#menu" class="btn btn-primary px-4 py-2 rounded-pill">Ver Menú</a>
-                <a href="#reservas" class="btn btn-outline-dark px-4 py-2 rounded-pill">Hacer Reserva</a>
-              </div>
+
+                <!-- Información rápida -->
+                 
+                <div class="row g-3">
+                    <div class="col-sm-4">
+                        <div class="hero-info-card">
+                            <i class="bi bi-clock text-accent"></i>
+                            <div>
+                                <small>Horario</small>
+                                <strong>10:30 am - 11:00 pm</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="hero-info-card">
+                            <i class="bi bi-geo-alt text-accent"></i>
+                            <div>
+                                <small>2 Sedes</small>
+                                <strong>Castilla - Piura</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="hero-info-card">
+                            <i class="bi bi-phone text-accent"></i>
+                            <div>
+                                <small>Contacto</small>
+                                <strong>975 519 075</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- PLATOS DESTACADOS - CARRUSEL              -->
+<!-- ========================================== -->
+<section class="py-5 bg-brand-dark">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">⭐ Platos Estrella</span>
+            <h2 class="display-5 fw-bold text-white">Nuestros <span class="text-accent">Especiales</span></h2>
+            <p class="text-secondary">Los favoritos de nuestros comensales</p>
+        </div>
+
+        <div id="platosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#platosCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#platosCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#platosCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/CevicheMixto.jpg" alt="Ceviche Mixto" class="img-fluid">
+                                    <span class="badge-plato">Popular</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Ceviche Mixto</h5>
+                                    <p>Filete, caballa y pota en leche de tigre</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 11.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/ChicharronMixto.jpg" alt="Chicharrón Mixto" class="img-fluid">
+                                    <span class="badge-plato bg-danger">Parrilla</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Chicharrón Mixto</h5>
+                                    <p>Pescado y pota crujientes con yuca</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 17.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/ParrillaMixta.jpg" alt="Parrilla Mixta" class="img-fluid">
+                                    <span class="badge-plato bg-success">Especial</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Parrilla Mixta</h5>
+                                    <p>Mollejitas, pancitas y pollo a la brasa</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 14.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/LecheTigre.jpg" alt="Leche de Tigre" class="img-fluid">
+                                    <span class="badge-plato bg-info">Clásico</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Leche de Tigre</h5>
+                                    <p>Clásica con chicharrón de pota</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 4.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/ComboChihuan1.jpg" alt="Combo Chihuan" class="img-fluid">
+                                    <span class="badge-plato bg-warning text-dark">Oferta</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Combo Chihuan 1</h5>
+                                    <p>Papa rellena + ceviche + chicharrón + leche tigre + gaseosa</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 11.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/Anticuchos.jpg" alt="Anticuchos" class="img-fluid">
+                                    <span class="badge-plato bg-danger">Parrilla</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Anticuchos</h5>
+                                    <p>2 palos de anticuchos con papas</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 12.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/ComboFamiliar1.jpg" alt="Combo Familiar" class="img-fluid">
+                                    <span class="badge-plato bg-success">Familiar</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Combo Familiar 1</h5>
+                                    <p>Trío combinado grande + arroz con marisco</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 27.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/ChichaMorada.jpg" alt="Chicha Morada" class="img-fluid">
+                                    <span class="badge-plato bg-info">Bebida</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Chicha Morada</h5>
+                                    <p>Jarra 1.5L de chicha morada artesanal</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 8.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-plato">
+                                <div class="card-plato-img">
+                                    <img src="img/PapaRellena.jpg" alt="Papa Rellena" class="img-fluid">
+                                    <span class="badge-plato bg-warning text-dark">Clásico</span>
+                                </div>
+                                <div class="card-plato-body">
+                                    <h5>Papa Rellena</h5>
+                                    <p>Con ceviche de filete y chicharrón</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="precio">S/ 7.00</span>
+                                        <a href="#menu" class="btn btn-sm btn-outline-accent">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#platosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#platosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- PROMOCIONES DESTACADAS                    -->
+<!-- ========================================== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">🔥 Promociones</span>
+            <h2 class="display-5 fw-bold">Combos <span class="text-accent">Especiales</span></h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="card-promo text-center">
+                    <span class="promo-badge">S/ 11.00</span>
+                    <i class="bi bi-egg-fried text-warning fs-1"></i>
+                    <h6 class="mt-2">Combo Chihuan 1</h6>
+                    <small class="text-muted">Papa + Ceviche + Chicharrón + Leche Tigre + Gaseosa</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card-promo text-center">
+                    <span class="promo-badge bg-success">S/ 13.00</span>
+                    <i class="bi bi-fire text-danger fs-1"></i>
+                    <h6 class="mt-2">Combo Chihuan 2</h6>
+                    <small class="text-muted">Papa + Ceviche Filete + Chicharrón + Leche Tigre + Gaseosa</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card-promo text-center">
+                    <span class="promo-badge bg-primary">S/ 27.00</span>
+                    <i class="bi bi-people-fill text-info fs-1"></i>
+                    <h6 class="mt-2">Combo Familiar 1</h6>
+                    <small class="text-muted">Trío combinado grande + arroz con marisco</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card-promo text-center">
+                    <span class="promo-badge bg-danger">S/ 27.00</span>
+                    <i class="bi bi-heart-fill text-danger fs-1"></i>
+                    <h6 class="mt-2">Combo Familiar 2</h6>
+                    <small class="text-muted">Dúo grande (ceviche filete + chicharrón pota) + gaseosa</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- TESTIMONIOS                               -->
+<!-- ========================================== -->
+<section class="py-5 bg-brand-dark">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag" style="background: rgba(243, 115, 53, 0.15); color: #f37335;">💬 Opiniones</span>
+            <h2 class="display-5 fw-bold text-white">Nuestros <span class="text-accent">Clientes</span></h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-testimonio">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="avatar-placeholder">JA</div>
+                        <div>
+                            <h6 class="mb-0 text-white">Juan A.</h6>
+                            <small class="text-warning">★★★★★</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-secondary">"El mejor ceviche de Piura. La atención es excelente y el ambiente muy familiar. ¡Volveré siempre!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-testimonio">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="avatar-placeholder">MP</div>
+                        <div>
+                            <h6 class="mb-0 text-white">María P.</h6>
+                            <small class="text-warning">★★★★★</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-secondary">"Las parrillas son espectaculares. La sazón norteña se siente en cada plato. ¡100% recomendado!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-testimonio">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="avatar-placeholder">CR</div>
+                        <div>
+                            <h6 class="mb-0 text-white">Carlos R.</h6>
+                            <small class="text-warning">★★★★★</small>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-secondary">"El combo familiar es perfecto para compartir. Precios justos y calidad insuperable. ¡Excelente servicio!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- SECCIÓN 2: MENÚ (Ceviches, Mariscos, Parrillas, Bebidas) -->
     <section id="menu" class="section-placeholder py-5">
